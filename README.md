@@ -1,6 +1,6 @@
 # Kneeling Pallets
 
-A complete, single-page Dead by Daylight fan site about a fictional term for wasting pallets. Dark horror styling, original inline SVG artwork, responsive layouts, reduced-motion support, and a random confession button. No fonts, libraries, APIs, database, or paid services are required.
+A complete, single-page Dead by Daylight fan site about a fictional term for wasting pallets. Dark horror styling, a featured gameplay image, responsive layouts, reduced-motion support, and a random confession button. No fonts, libraries, APIs, database, or paid services are required.
 
 ## Run with Java
 
@@ -41,7 +41,7 @@ The included `.github/workflows/pages.yml` publishes only `public/` when `main` 
 1. In this GitHub repository, open **Settings → Pages**.
 2. Under **Build and deployment → Source**, choose **GitHub Actions**. GitHub Pages must be available for your repository/account; a public repository can use it for free.
 3. In **Actions → Publish static website**, choose **Run workflow** on `main` (or push another commit).
-4. Wait for the workflow to succeed. The deployment summary and Settings → Pages show the actual public URL, normally `https://ryzentide.github.io/troll-website-ai/`.
+4. Wait for the workflow to succeed. The deployment summary and Settings → Pages show the actual public URL, normally `https://ryzentide.github.io/DBD-Pallet-Kneeling/`.
 5. Open that URL and test the confession button before sending it to a friend.
 
 Relative asset paths support both the GitHub Pages repository subdirectory and a custom domain. The Java process is not used by GitHub Pages. Do not assume the site is published until the deployment succeeds.
@@ -52,7 +52,7 @@ Use a host or machine with JDK 17+, copy this repository, and run the server wit
 
 ## Project layout
 
-- `public/index.html` — all page content and original pallet illustration
+- `public/index.html` — all page content and featured image markup
 - `public/style.css` — responsive theme, animations, and reduced-motion support
 - `public/script.js` — eight random confessions; no consecutive duplicate responses
 - `public/favicon.svg` — local favicon
@@ -64,4 +64,4 @@ Use a host or machine with JDK 17+, copy this repository, and run the server wit
 
 With Java running, confirm the page and assets return HTTP 200, missing files return 404, and unsupported methods return 405. Test the confession button repeatedly, desktop and narrow phone layouts, keyboard focus, and reduced-motion preferences. No frontend build step is needed.
 
-This is an unofficial fan project, not affiliated with Behaviour Interactive. “Kneeling Pallets” is fictional. No official game artwork or logos are used.
+This is an unofficial fan project, not affiliated with Behaviour Interactive. “Kneeling Pallets” is fictional. The featured gameplay screenshot was supplied by the site owner.

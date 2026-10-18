@@ -11,7 +11,7 @@ public class Server {
         String host = System.getenv().getOrDefault("HOST", "127.0.0.1");
         Path root = Path.of("public").toRealPath();
         Map<String, String> types = Map.of("html", "text/html; charset=utf-8", "css", "text/css; charset=utf-8",
-            "js", "text/javascript; charset=utf-8", "svg", "image/svg+xml");
+            "js", "text/javascript; charset=utf-8", "svg", "image/svg+xml", "jpg", "image/jpeg", "jpeg", "image/jpeg");
         HttpServer server = HttpServer.create(new InetSocketAddress(host, port), 0);
         server.createContext("/", exchange -> {
             try {
